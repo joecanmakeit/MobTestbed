@@ -35,7 +35,7 @@ public class MyMod {
 	public static int armorCount = 5;
 	public static HashMap<String, Integer> armorMap = new HashMap<String, Integer>();
 
-	// AUTHOR NAME: 
+	// AUTHOR NAME: Joe Allington 
 
 	@Instance(value = "1")
 	public static MyMod instance;
