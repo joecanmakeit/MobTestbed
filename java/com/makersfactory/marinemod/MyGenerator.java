@@ -1,4 +1,4 @@
-package mypackage;
+package com.makersfactory.marinemod;
 
 import java.util.Random;
 
@@ -14,22 +14,13 @@ public class MyGenerator implements IWorldGenerator {
 
 	private void generateSurface(World world, Random random, int i, int j) {
 		
-		// GENERATE BLOCKS IN NORMAL WORLD
-		generateVeinsNormal(world, random, i, j, MyMod.instance.makersOre, 8, 32, 0, 128);
-		
 	}
 
 	private void generateNether(World world, Random random, int i, int j) {
-
-		// GENERATE BLOCKS IN THE NETHER
-		generateVeinsNether(world, random, i, j, MyMod.instance.makersOre, 8, 32, 0, 128);
 		
 	}
 	
 	private void generateEnd(World world, Random random, int i, int j) {
-		
-		// GENERATE BLOCKS IN THE END
-		generateVeinsEnd(world, random, i, j, MyMod.instance.makersOre, 8, 32, 0, 128);
 		
 	}
 

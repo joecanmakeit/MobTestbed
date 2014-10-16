@@ -1,4 +1,4 @@
-package mypackage;
+package com.makersfactory.marinemod;
 
 import java.util.Random;
 

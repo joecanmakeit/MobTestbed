@@ -9,7 +9,7 @@
 
 
 
-package mypackage;
+package com.makersfactory.marinemod;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

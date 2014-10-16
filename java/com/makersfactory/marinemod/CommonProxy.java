@@ -1,4 +1,4 @@
-package mypackage;
+package com.makersfactory.marinemod;
 
 public class CommonProxy {
 

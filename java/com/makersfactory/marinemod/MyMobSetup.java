@@ -1,4 +1,4 @@
-package mypackage;
+package com.makersfactory.marinemod;
 
 import net.minecraft.entity.EntityList;
 import cpw.mods.fml.common.registry.EntityRegistry;
