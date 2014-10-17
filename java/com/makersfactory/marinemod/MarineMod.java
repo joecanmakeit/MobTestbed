@@ -30,9 +30,9 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid="NAME_GOES_HERE_ID", name="NAME_GOES_HERE", version="0.1.0")
-public class MyMod {
+public class MarineMod {
 	@Instance(value = "1")
-	public static MyMod instance;
+	public static MarineMod instance;
 	@SidedProxy(clientSide="com.makersfactory.marinemod.client.ClientProxy", serverSide="com.makersfactory.marinemod.CommonProxy")
 	public static CommonProxy proxy;
 	
@@ -42,8 +42,8 @@ public class MyMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		
 		// Register the two Event Listener files
-		MinecraftForge.EVENT_BUS.register(new MyForgeEvents());
-		FMLCommonHandler.instance().bus().register(new MyWorldEvents());
+		MinecraftForge.EVENT_BUS.register(new MainForgeEvents());
+		FMLCommonHandler.instance().bus().register(new MainWorldEvents());
 		
 		// Register mobs
 		int entityID = 0;
@@ -53,7 +53,7 @@ public class MyMod {
 	@EventHandler
 	public void load(FMLInitializationEvent event) {
 		proxy.registerRenderers();
-		GameRegistry.registerWorldGenerator(new MyGenerator(), 1000);		
+		GameRegistry.registerWorldGenerator(new MainGenerator(), 1000);		
 	}
 
 	@EventHandler

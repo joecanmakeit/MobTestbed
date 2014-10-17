@@ -10,7 +10,7 @@ import net.minecraft.world.gen.feature.WorldGenIceSpike;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 
-public class MyGenerator implements IWorldGenerator {
+public class MainGenerator implements IWorldGenerator {
 
 	private void generateSurface(World world, Random random, int i, int j) {
 		

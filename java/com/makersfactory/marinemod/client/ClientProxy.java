@@ -1,10 +1,10 @@
 package com.makersfactory.marinemod.client;
 
 import com.makersfactory.marinemod.CommonProxy;
-import com.makersfactory.marinemod.ModelJellyfishTest;
-import com.makersfactory.marinemod.MyMobEntity;
-import com.makersfactory.marinemod.MyMobRender;
-import com.makersfactory.marinemod.MyMod;
+import com.makersfactory.marinemod.MarineMod;
+import com.makersfactory.marinemod.entity.EntityJellyfish;
+import com.makersfactory.marinemod.model.ModelJellyfish;
+import com.makersfactory.marinemod.renderer.RenderJellyfish;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import net.minecraft.client.model.ModelPig;
@@ -18,6 +18,6 @@ public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void registerRenderers() {
-		RenderingRegistry.registerEntityRenderingHandler(MyMobEntity.class, new MyMobRender(new ModelJellyfishTest(), 0.7F));
+		RenderingRegistry.registerEntityRenderingHandler(EntityJellyfish.class, new RenderJellyfish(new ModelJellyfish(1), new ModelJellyfish(0), 1.0F));
 	}
 }

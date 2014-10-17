@@ -15,7 +15,7 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.TickEvent.PlayerTickEvent;
 import cpw.mods.fml.common.gameevent.TickEvent.WorldTickEvent;
 
-public class MyWorldEvents {
+public class MainWorldEvents {
 
 	int tickCount = 0;
 	Random random = new Random();

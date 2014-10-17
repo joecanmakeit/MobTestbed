@@ -15,7 +15,7 @@ import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
-public class MyForgeEvents {
+public class MainForgeEvents {
 
 	@SubscribeEvent
 	public void onPlayerClick(PlayerInteractEvent e) {

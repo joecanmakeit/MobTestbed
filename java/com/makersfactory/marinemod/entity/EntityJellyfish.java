@@ -1,4 +1,4 @@
-package com.makersfactory.marinemod;
+package com.makersfactory.marinemod.entity;
 
 import java.util.Random;
 
@@ -21,11 +21,11 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeModContainer;
 
-public class MyMobEntity extends EntitySquid {
+public class EntityJellyfish extends EntitySquid {
 	
 	Random random = new Random();
 	
-	public MyMobEntity(World par1World) {
+	public EntityJellyfish(World par1World) {
 		super(par1World);
         this.isImmuneToFire = true;
 	}
